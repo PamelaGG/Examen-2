@@ -1,0 +1,14 @@
+
+<div id = "propiedad" layout="column" class="row">
+	<label>Properties:</label>
+	<md-input-container class="md-block">
+	    <md-select aria-label="propiedades" id="slt-propiedades" ng-model="propiedadCtrl.propiedad" required>
+	        <md-option value="{{propiedad.name}}" ng-repeat="propiedad in propiedadCtrl.propiedades" required>{{propiedad.name}}</md-option>
+	    </md-select>
+	</md-input-container>
+</div>
+	<input type="button" value="Shop" ng-click="propiedadCtrl.ownedBy()"/>
+
+<div ui-view></div>
+
+

@@ -1,0 +1,67 @@
+<div layout="column" ng-cloak="" class="inputdemoErrors" ng-app="test">
+  <md-content layout-padding="100%">
+    <div class="container" layout="row" flex>
+      <md-sidenav md-is-locked-open="true" class="md-primary">
+      <div>
+        <ul>
+          <li><md-button class="sesion" layout-align="center end" ui-sref="logIn"> Log In</li></md-button>
+        </ul>
+      </div>
+      <h2>To play!</h2>
+      <p>Come and play with your friends</p>
+      </md-sidenav>
+
+      <form name="testForm" class="container md-pad" flex="50">
+
+        <md-input-container md-padding="20px" class="md-block">
+          <label>Code:</label>
+          <input required="" name="code" ng-model="userCtrl.code" type="number">
+          <div ng-messages="testForm.code.$error">
+            <div ng-message="required">Code is required.</div>
+          </div>
+        </md-input-container>
+          
+         <md-input-container md-padding="20px" class="md-block">
+          <label>Name: </label>
+          <input required="" name="name" ng-model="userCtrl.name" type="text">
+          <div ng-messages="testForm.name.$error">
+            <div ng-message="required">Name is required.</div>
+          </div>
+        </md-input-container>
+          
+        <md-input-container md-padding="20px" class="md-block">
+          <label>Nickname: </label>
+          <input required="" name="nickName" ng-model="userCtrl.nickName"  type="text">
+          <div ng-messages="testForm.nickName.$error">
+            <div ng-message="required">Nickname is required.</div>
+          </div>
+        </md-input-container>
+
+        <md-input-container md-padding="20px" class="md-block">
+          <label>Coins: </label>
+          <input required="" name="coins" type="number" min="1000" max="1000"  ng-model="userCtrl.coins">
+          <div ng-messages="testForm.coins.$error">
+            <div ng-message="required">Required 1000 coins.</div>
+          </div>
+        </md-input-container>
+          
+        <label>Image</label>
+        <md-input-container md-padding="20px" class="md-block">
+          <input type="file"  id="photo" ng-model="userCtrl.image">
+        </md-input-container>
+      
+     <!--<md-button ng-click="movieForm.$valid && movieCtrl.save()" class="btn1" >Save</md-button>-->
+        <label>Biography</label>
+         <md-button class="md-button" name="Upload" ng-click="userCtrl.showPicker()" type="button">Upload Bio</md-button>
+
+
+
+         
+        <div>
+          <md-button class="md-button" name="submitUser" ng-click="userCtrl.preSave()" type="button">Registrer</md-button>
+        </div>
+      </form>
+    </div>
+  </md-content>
+</div>
+<div ui-view></div>

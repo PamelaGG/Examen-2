@@ -1,0 +1,10 @@
+{
+  "name": "test",
+  "description": "arc examen",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "dependencies": {
+    "ng-file-upload": "^12.2.13"
+  }
+}

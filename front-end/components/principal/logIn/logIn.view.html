@@ -1,0 +1,33 @@
+<div layout="column" ng-cloak="" class="inputdemoErrors" ng-app="test">
+  <md-content layout-padding="">
+    <div class="container" layout="row" flex>
+      <md-sidenav md-is-locked-open="true" class="md-primary" class="md-whiteframe-4dp">
+      </md-sidenav>
+
+      <md-content class="md-padding" flex>
+          <form name="testForm" class="container md-padding">
+            <md-input-container md-padding="20px" class="md-block">
+              <label>Nickname:</label>
+              <input required="" name="playerNickName" ng-model="logInCtrl.nickName">
+              <div ng-messages="testForm.playerNickName.$error">
+                <div ng-message="required">This is required.</div>
+              </div>
+            </md-input-container>
+
+            <md-input-container md-padding="20px" class="md-block">
+              <label>Code:</label>
+              <input required="" name="playerCode" ng-model="logInCtrl.code" type="number">
+              <div ng-messages="testForm.playerCode.$error">
+                <div ng-message="required">Code is required.</div>
+              </div>
+            </md-input-container>
+
+            <div>
+              <md-button ng-click="logInCtrl.logIn()" type="submit">Go</md-button>
+            </div>
+          </form>
+          </md-content>
+        </div>
+      </md-content>
+</div>
+<div ui-view></div>

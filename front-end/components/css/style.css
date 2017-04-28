@@ -1,0 +1,70 @@
+body{
+	background-color:#d35400;
+}
+h2{
+	color:#152d39;
+	font-size:30px;
+	padding:1%;
+	font-weight:bold;
+}
+p{
+	color:#fff;
+	font-weight:bold;
+}
+.inputdemoErrors .inputErrorsApp {
+  min-height: 48px; }
+
+.inputdemoErrors md-input-container > p {
+  font-size: 0.8em;
+  text-align: left;
+  width: 100%; 
+}
+<md-datepicker input{
+	color:#ffffff;
+	font-size:20px;
+}
+md-input-container label{
+	color:#ffffff;
+	font-size:22px;
+}
+
+label{
+	color:#ffffff;
+	font-size:22px;
+}
+
+md-input-container input{
+	color:#ffffff;
+}
+md-sidenav{
+	background-color:#f1c40f;
+	margin:0 auto;
+}
+md-content{
+	background-color:#152d39;
+}
+md-button{
+	color:#ffffff;
+	background-color:orange;
+	border:2px solid orange;
+	padding:5px 30px;
+	margin:10px;
+	border-radius: 5%;
+}
+md-button:hover{
+	background-color:#f1c40f;
+}
+.md-button{
+	color:#152d39;
+	padding:5px 30px;
+	font-weight:bolder;
+	background-color:#ffffff;
+}
+.md-pad{
+	margin-left:30%;
+	padding-bottom:3%;
+}
+
+md-button:hover:not([disabled]){
+	background-color:#f1c40f;
+}
